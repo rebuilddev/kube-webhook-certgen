@@ -36,3 +36,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build Docker image
         run: bash .cicd/docker.sh
+
+      # Runs a single command using the runners shell
+      - name: Push to Docker hub
+        run: bash .cicd/push.sh
