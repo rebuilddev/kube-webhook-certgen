@@ -19,7 +19,7 @@ if exists $dockerRepo $vers; then
     echo $dockerRepo:$vers already exists, will not overwrite
     exit 0
 else
-    docker login -u zhuyijing -p $jettechPassword
+    docker login -u zhuyijing -p $dockerhubPassword
     dpush amd64
     dpush arm
     dpush arm64
