@@ -42,4 +42,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Push to Docker hub
+        env:
+          DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
         run: . .cicd/push.sh
