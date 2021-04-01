@@ -34,12 +34,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build the binary
-        run: .cicd/build.sh
+        run: . .cicd/build.sh
 
       # Runs a single command using the runners shell
       - name: Build Docker image
-        run: .cicd/docker.sh
+        run: . .cicd/docker.sh
 
       # Runs a single command using the runners shell
       - name: Push to Docker hub
-        run: .cicd/push.sh
+        run: . .cicd/push.sh
